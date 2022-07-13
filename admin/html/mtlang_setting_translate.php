@@ -4,14 +4,14 @@
 	<ul class="nav nav-tabs" role="tablist" id="mtlang_translate_nav">
 		<?php $i = 0; foreach ($language['list'] as $key => $lang) { if($key == Language::default()) continue; ?>
 		<li role="presentation" class="<?php echo ($i == 0) ? 'active' : '' ; $i++;?>" data-lang="<?php echo $key;?>" style="padding: 0px;">
-			<a href="#<?php echo $key;?>" aria-controls="<?php echo $key;?>" role="tab" data-toggle="tab" style="padding: 10px;">
+			<a href="#<?php echo $key;?>" aria-controls="<?php echo $key;?>" role="tab" data-bs-toggle="tab" style="padding: 10px;">
                 <?php echo $current['label'] .' <i class="fad fa-angle-double-right"></i> '. $lang['label'];?>
             </a>
 		</li>
 		<?php } ?>
 	</ul>
 	<div class="box">
-		<div class="box-content" style="padding: 10px;">
+		<div class="box-content row" style="padding: 10px;">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 				<input type="text" name="key" id="input" class="form-control" required>
 			</div>
@@ -63,23 +63,6 @@
 
 <script type="text/javascript">
 	$(function(){
-
-		$('.edittable-lang-text').editable({
-
-			type: 'text',
-
-			params: function(params) {
-
-		        params.action = 'mtlang_ajax_translate_save';
-
-		        params.language = $(this).editable().attr('data-key');
-
-		        params.key 		= $(this).editable().attr('data-key-lang');
-
-		        return params;
-		    },
-			url: base +'/ajax',
-		});
 
 		$('#admin_language_form').submit(function(){
 

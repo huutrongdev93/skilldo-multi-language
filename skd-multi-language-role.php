@@ -16,7 +16,7 @@ function mtlang_role_group( $group ) {
 
 	$group['mtlang'] = array(
 		'label' => __('Đa ngôn ngữ'),
-		'capbilities' => array(
+		'capabilities' => array(
 			'mtlang_role',
 			'mtlang_role_language',
 			'mtlang_role_translate',
