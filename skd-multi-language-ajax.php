@@ -5,11 +5,11 @@ function mtlang_ajax_language_save( $ci, $model ) {
 
 	$result['message'] = 'Lưu dữ liệu thất bại';
 
-	if( InputBuilder::Post() ) {
+	if( Request::Post() ) {
 
 		$check = true;
 
-		$data = InputBuilder::Post();
+		$data = Request::Post();
 
 		$language = Option::get('language', MultiLanguage::default() );
 
@@ -46,9 +46,9 @@ function mtlang_ajax_language_active( $ci, $model ) {
 
 	$result['message'] = 'Lưu dữ liệu thất bại';
 
-	if( InputBuilder::Post() ) {
+	if( Request::Post() ) {
 
-		$data = InputBuilder::Post();
+		$data = Request::Post();
 
 		$language = get_option('language', MultiLanguage::default() );
 
@@ -76,9 +76,9 @@ function mtlang_ajax_language_delete( $ci, $model ) {
 
 	$result['message'] = 'Xóa dữ liệu thất bại';
 
-	if( InputBuilder::Post() ) {
+	if( Request::Post() ) {
 
-		$data = InputBuilder::Post();
+		$data = Request::Post();
 
 		$language 			= get_option('language', MultiLanguage::default() );
 
@@ -115,17 +115,17 @@ function mtlang_ajax_translate_save( $ci, $model ) {
 
 	$result['message'] = 'Lưu dữ liệu thất bại';
 
-	if( InputBuilder::Post() ) {
+	if( Request::Post() ) {
 
-		$type 			= Str::clear(InputBuilder::Post('name'));
+		$type 			= Str::clear(Request::Post('name'));
 
-		$key 			= Str::clear(InputBuilder::Post('key'));
+		$key 			= Str::clear(Request::Post('key'));
 
-		$value_new 		= Str::clear(InputBuilder::Post('value'));
+		$value_new 		= Str::clear(Request::Post('value'));
 
-		$value_old 		= Str::clear(InputBuilder::Post('pk'));
+		$value_old 		= Str::clear(Request::Post('pk'));
 
-		$language_key 	= Str::clear(InputBuilder::Post('language'));
+		$language_key 	= Str::clear(Request::Post('language'));
 
 		$translate		= MultiLanguage::translate( $language_key );
 
@@ -168,13 +168,13 @@ function mtlang_ajax_translate_add( $ci, $model ) {
 
 	$result['message'] = 'Lưu dữ liệu thất bại';
 
-	if( InputBuilder::Post() ) {
+	if( Request::Post() ) {
 
-		$key 		= Str::clear(InputBuilder::Post('key'));
+		$key 		= Str::clear(Request::Post('key'));
 
-		$label 		= Str::clear(InputBuilder::Post('label'));
+		$label 		= Str::clear(Request::Post('label'));
 
-		$language_key 	= Str::clear(InputBuilder::Post('language'));
+		$language_key 	= Str::clear(Request::Post('language'));
 
 		$translate		= MultiLanguage::translate( $language_key );
 

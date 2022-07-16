@@ -13,7 +13,7 @@ function mtlang_setting_callback() {
 
 	$tabs = mtlang_setting_tabs();
 
-	$current_tab = (InputBuilder::Get('tab') != '') ? InputBuilder::Get('tab') :'general';
+	$current_tab = (Request::Get('tab') != '') ? Request::Get('tab') :'general';
 
 	include 'html/mtlang_setting.php';
 }
