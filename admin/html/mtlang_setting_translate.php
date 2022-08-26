@@ -2,7 +2,7 @@
 	<!-- Nav tabs -->
 	<?php $current = Language::list(Language::default());?>
 	<ul class="nav nav-tabs" role="tablist" id="mtlang_translate_nav">
-		<?php $i = 0; foreach ($language['list'] as $key => $lang) { if($key == Language::default()) continue; ?>
+		<?php $i = 0; foreach ($language as $key => $lang) { if($key == Language::default()) continue; ?>
 		<li role="presentation" class="<?php echo ($i == 0) ? 'active' : '' ; $i++;?>" data-lang="<?php echo $key;?>" style="padding: 0px;">
 			<a href="#<?php echo $key;?>" aria-controls="<?php echo $key;?>" role="tab" data-bs-toggle="tab" style="padding: 10px;">
                 <?php echo $current['label'] .' <i class="fad fa-angle-double-right"></i> '. $lang['label'];?>
@@ -26,7 +26,7 @@
 
 	<!-- Tab panes -->
 	<div class="tab-content" id="mtlang_translate_content">
-		<?php $i = 0; foreach ($language['list'] as $key => $lang) { if($key == Language::default()) continue; ?>
+		<?php $i = 0; foreach ($language as $key => $lang) { if($key == Language::default()) continue; ?>
 		<div role="tabpanel" class="tab-pane <?php echo ($i == 0) ? 'active' : '' ; $i++;?>" id="<?php echo $key;?>">
             <div class="box">
                 <div class="box-content" style="padding: 10px;">
@@ -64,6 +64,17 @@
 <script type="text/javascript">
 	$(function(){
 
+        $('.edittable-lang-text').editable({
+            type: 'text',
+            params: function(params) {
+                params.action = 'mtlang_ajax_translate_save';
+                params.language = $(this).editable().attr('data-key');
+                params.key 		= $(this).editable().attr('data-key-lang');
+                return params;
+            },
+            url: ajax,
+        });
+
 		$('#admin_language_form').submit(function(){
 
 			$('#ajax_item_save_loader').show();
@@ -74,7 +85,7 @@
 
 			data.language   = $('#mtlang_translate_nav li.active').attr('data-lang');
 
-			$jqxhr   = $.post(base+'/ajax', data, function() {}, 'json');
+			$jqxhr   = $.post(ajax, data, function() {}, 'json');
 
 			$jqxhr.done(function( r ) {
 
