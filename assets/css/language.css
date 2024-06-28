@@ -1,0 +1,52 @@
+.language-picker-list {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  gap: 6px;
+}
+.language-picker-list .language-item a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--language-btn-txt, #000);
+  background-color: var(--language-btn-bg, #fff);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+.language-picker-list .language-item a:hover {
+  color: var(--language-btn-txt-hover, #000);
+  background-color: var(--language-btn-bg-hover, #fff);
+}
+.language-wrapper.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* remove the gap so it doesn't close */
+}
+.language-picker-selected {
+  cursor: pointer;
+  padding: 10px 0;
+}
+.language-picker-select {
+  padding: 0;
+  min-width: 200px;
+  --bs-dropdown-border-radius: 4px;
+  --bs-dropdown-border-width: 0;
+  --bs-dropdown-min-width: 16rem;
+  box-shadow: 0px 0px 50px 0px rgba(82, 63, 105, 0.15);
+  overflow: hidden;
+}
+.language-picker-select .language-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--language-btn-txt, #000);
+  background-color: var(--language-btn-bg, #fff);
+  padding: 10px;
+}
+.language-picker-select .language-item a:hover {
+  color: var(--language-btn-txt-hover, #000);
+  background-color: var(--language-btn-bg-hover, #fff);
+}
+/*# sourceMappingURL=language.css.map */

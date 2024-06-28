@@ -1,0 +1,954 @@
+[
+	{
+		"key": "ad",
+		"name": "Andorra"
+	},
+	{
+		"key": "ae",
+		"name": "Các Tiểu Vương quốc Ả Rập Thống nhất"
+	},
+	{
+		"key": "af",
+		"name": "Afghanistan"
+	},
+	{
+		"key": "ag",
+		"name": "Antigua và Barbuda"
+	},
+	{
+		"key": "ai",
+		"name": "Anguilla"
+	},
+	{
+		"key": "al",
+		"name": "Albania"
+	},
+	{
+		"key": "am",
+		"name": "Armenia"
+	},
+	{
+		"key": "ao",
+		"name": "Angola"
+	},
+	{
+		"key": "ar",
+		"name": "Argentina"
+	},
+	{
+		"key": "as",
+		"name": "Samoa thuộc Mỹ"
+	},
+	{
+		"key": "at",
+		"name": "Áo"
+	},
+	{
+		"key": "au",
+		"name": "Úc"
+	},
+	{
+		"key": "aw",
+		"name": "Aruba"
+	},
+	{
+		"key": "ax",
+		"name": "Quần đảo Aland"
+	},
+	{
+		"key": "az",
+		"name": "Azerbaijan"
+	},
+	{
+		"key": "ba",
+		"name": "Bosnia và Herzegovina"
+	},
+	{
+		"key": "bb",
+		"name": "Barbados"
+	},
+	{
+		"key": "bd",
+		"name": "Bangladesh"
+	},
+	{
+		"key": "be",
+		"name": "Bỉ"
+	},
+	{
+		"key": "bf",
+		"name": "Burkina Faso"
+	},
+	{
+		"key": "bg",
+		"name": "Bulgaria"
+	},
+	{
+		"key": "bh",
+		"name": "Bahrain"
+	},
+	{
+		"key": "bi",
+		"name": "Burundi"
+	},
+	{
+		"key": "bj",
+		"name": "Benin"
+	},
+	{
+		"key": "bm",
+		"name": "Bermuda"
+	},
+	{
+		"key": "bn",
+		"name": "Brunei"
+	},
+	{
+		"key": "bo",
+		"name": "Bolivia"
+	},
+	{
+		"key": "br",
+		"name": "Brazil"
+	},
+	{
+		"key": "bs",
+		"name": "Bahamas"
+	},
+	{
+		"key": "bt",
+		"name": "Bhutan"
+	},
+	{
+		"key": "bw",
+		"name": "Botswana"
+	},
+	{
+		"key": "by",
+		"name": "Belarus"
+	},
+	{
+		"key": "bz",
+		"name": "Belize"
+	},
+	{
+		"key": "ca",
+		"name": "Canada"
+	},
+	{
+		"key": "ca_ES",
+		"name": "Catalonia"
+	},
+	{
+		"key": "cc",
+		"name": "Quần đảo Cocos (Keeling)"
+	},
+	{
+		"key": "cd",
+		"name": "Cộng hòa Dân chủ Congo"
+	},
+	{
+		"key": "cf",
+		"name": "Cộng hòa Trung Phi"
+	},
+	{
+		"key": "cg",
+		"name": "Congo"
+	},
+	{
+		"key": "ch",
+		"name": "Thụy Sĩ"
+	},
+	{
+		"key": "ci",
+		"name": "Bờ Biển Ngà"
+	},
+	{
+		"key": "ck",
+		"name": "Quần đảo Cook"
+	},
+	{
+		"key": "cl",
+		"name": "Chile"
+	},
+	{
+		"key": "cm",
+		"name": "Cameroon"
+	},
+	{
+		"key": "cn",
+		"name": "Trung Quốc"
+	},
+	{
+		"key": "co",
+		"name": "Colombia"
+	},
+	{
+		"key": "cr",
+		"name": "Costa Rica"
+	},
+	{
+		"key": "cu",
+		"name": "Cuba"
+	},
+	{
+		"key": "cv",
+		"name": "Cape Verde"
+	},
+	{
+		"key": "cx",
+		"name": "Đảo Giáng sinh"
+	},
+	{
+		"key": "cy",
+		"name": "Síp"
+	},
+	{
+		"key": "cz",
+		"name": "Cộng hòa Séc"
+	},
+	{
+		"key": "de",
+		"name": "Đức"
+	},
+	{
+		"key": "dj",
+		"name": "Djibouti"
+	},
+	{
+		"key": "dk",
+		"name": "Đan Mạch"
+	},
+	{
+		"key": "dm",
+		"name": "Dominica"
+	},
+	{
+		"key": "do",
+		"name": "Cộng hòa Dominica"
+	},
+	{
+		"key": "dz",
+		"name": "Algeria"
+	},
+	{
+		"key": "ec",
+		"name": "Ecuador"
+	},
+	{
+		"key": "ee",
+		"name": "Estonia"
+	},
+	{
+		"key": "eg",
+		"name": "Ai Cập"
+	},
+	{
+		"key": "eh",
+		"name": "Tây Sahara"
+	},
+	{
+		"key": "en",
+		"name": "Anh"
+	},
+	{
+		"key": "er",
+		"name": "Eritrea"
+	},
+	{
+		"key": "es",
+		"name": "Tây Ban Nha"
+	},
+	{
+		"key": "et",
+		"name": "Ethiopia"
+	},
+	{
+		"key": "fi",
+		"name": "Phần Lan"
+	},
+	{
+		"key": "fj",
+		"name": "Fiji"
+	},
+	{
+		"key": "fk",
+		"name": "Quần đảo Falkland"
+	},
+	{
+		"key": "fm",
+		"name": "Micronesia"
+	},
+	{
+		"key": "fo",
+		"name": "Quần đảo Faroe"
+	},
+	{
+		"key": "fr",
+		"name": "Pháp"
+	},
+	{
+		"key": "ga",
+		"name": "Gabon"
+	},
+	{
+		"key": "gb",
+		"name": "Vương quốc Anh"
+	},
+	{
+		"key": "gd",
+		"name": "Grenada"
+	},
+	{
+		"key": "ge",
+		"name": "Georgia"
+	},
+	{
+		"key": "gh",
+		"name": "Ghana"
+	},
+	{
+		"key": "gi",
+		"name": "Gibraltar"
+	},
+	{
+		"key": "gl",
+		"name": "Greenland"
+	},
+	{
+		"key": "gm",
+		"name": "Gambia"
+	},
+	{
+		"key": "gn",
+		"name": "Guinea"
+	},
+	{
+		"key": "gp",
+		"name": "Guadeloupe"
+	},
+	{
+		"key": "gq",
+		"name": "Guinea Xích đạo"
+	},
+	{
+		"key": "gr",
+		"name": "Hy Lạp"
+	},
+	{
+		"key": "gs",
+		"name": "Nam Georgia và Quần đảo Sandwich Nam"
+	},
+	{
+		"key": "gt",
+		"name": "Guatemala"
+	},
+	{
+		"key": "gu",
+		"name": "Guam"
+	},
+	{
+		"key": "gw",
+		"name": "Guinea-Bissau"
+	},
+	{
+		"key": "gy",
+		"name": "Guyana"
+	},
+	{
+		"key": "hk",
+		"name": "Hồng Kông"
+	},
+	{
+		"key": "hm",
+		"name": "Đảo Heard và Quần đảo McDonald"
+	},
+	{
+		"key": "hn",
+		"name": "Honduras"
+	},
+	{
+		"key": "hr",
+		"name": "Croatia"
+	},
+	{
+		"key": "ht",
+		"name": "Haiti"
+	},
+	{
+		"key": "hu",
+		"name": "Hungary"
+	},
+	{
+		"key": "id",
+		"name": "Indonesia"
+	},
+	{
+		"key": "ie",
+		"name": "Cộng hòa Ireland"
+	},
+	{
+		"key": "il",
+		"name": "Israel"
+	},
+	{
+		"key": "in",
+		"name": "Ấn Độ"
+	},
+	{
+		"key": "io",
+		"name": "Lãnh thổ Ấn Độ Dương thuộc Anh"
+	},
+	{
+		"key": "iq",
+		"name": "Iraq"
+	},
+	{
+		"key": "ir",
+		"name": "Iran"
+	},
+	{
+		"key": "is",
+		"name": "Iceland"
+	},
+	{
+		"key": "it",
+		"name": "Ý"
+	},
+	{
+		"key": "jm",
+		"name": "Jamaica"
+	},
+	{
+		"key": "jo",
+		"name": "Jordan"
+	},
+	{
+		"key": "ja",
+		"name": "Nhật Bản"
+	},
+	{
+		"key": "ke",
+		"name": "Kenya"
+	},
+	{
+		"key": "kg",
+		"name": "Kyrgyzstan"
+	},
+	{
+		"key": "kh",
+		"name": "Campuchia"
+	},
+	{
+		"key": "ki",
+		"name": "Kiribati"
+	},
+	{
+		"key": "km",
+		"name": "Comoros"
+	},
+	{
+		"key": "kn",
+		"name": "Saint Kitts và Nevis"
+	},
+	{
+		"key": "kp",
+		"name": "Bắc Triều Tiên"
+	},
+	{
+		"key": "kr",
+		"name": "Hàn Quốc"
+	},
+	{
+		"key": "kw",
+		"name": "Kuwait"
+	},
+	{
+		"key": "ky",
+		"name": "Quần đảo Cayman"
+	},
+	{
+		"key": "kz",
+		"name": "Kazakhstan"
+	},
+	{
+		"key": "la",
+		"name": "Lào"
+	},
+	{
+		"key": "lb",
+		"name": "Lebanon"
+	},
+	{
+		"key": "lc",
+		"name": "Saint Lucia"
+	},
+	{
+		"key": "li",
+		"name": "Liechtenstein"
+	},
+	{
+		"key": "lk",
+		"name": "Sri Lanka"
+	},
+	{
+		"key": "lr",
+		"name": "Liberia"
+	},
+	{
+		"key": "ls",
+		"name": "Lesotho"
+	},
+	{
+		"key": "lt",
+		"name": "Lithuania"
+	},
+	{
+		"key": "lu",
+		"name": "Luxembourg"
+	},
+	{
+		"key": "lv",
+		"name": "Latvia"
+	},
+	{
+		"key": "ly",
+		"name": "Libya"
+	},
+	{
+		"key": "ma",
+		"name": "Morocco"
+	},
+	{
+		"key": "mc",
+		"name": "Monaco"
+	},
+	{
+		"key": "md",
+		"name": "Moldova"
+	},
+	{
+		"key": "me",
+		"name": "Montenegro"
+	},
+	{
+		"key": "mg",
+		"name": "Madagascar"
+	},
+	{
+		"key": "mh",
+		"name": "Quần đảo Marshall"
+	},
+	{
+		"key": "mk",
+		"name": "Macedonia"
+	},
+	{
+		"key": "ml",
+		"name": "Mali"
+	},
+	{
+		"key": "mm",
+		"name": "Myanmar"
+	},
+	{
+		"key": "mn",
+		"name": "Mông Cổ"
+	},
+	{
+		"key": "mo",
+		"name": "Macao"
+	},
+	{
+		"key": "mp",
+		"name": "Quần đảo Mariana thuộc Mỹ"
+	},
+	{
+		"key": "mq",
+		"name": "Martinique"
+	},
+	{
+		"key": "mr",
+		"name": "Mauritania"
+	},
+	{
+		"key": "ms",
+		"name": "Montserrat"
+	},
+	{
+		"key": "mt",
+		"name": "Malta"
+	},
+	{
+		"key": "mu",
+		"name": "Mauritius"
+	},
+	{
+		"key": "mv",
+		"name": "Maldives"
+	},
+	{
+		"key": "mw",
+		"name": "Malawi"
+	},
+	{
+		"key": "mx",
+		"name": "Mexico"
+	},
+	{
+		"key": "my",
+		"name": "Malaysia"
+	},
+	{
+		"key": "mz",
+		"name": "Mozambique"
+	},
+	{
+		"key": "na",
+		"name": "Namibia"
+	},
+	{
+		"key": "nc",
+		"name": "New Caledonia"
+	},
+	{
+		"key": "ne",
+		"name": "Niger"
+	},
+	{
+		"key": "nf",
+		"name": "Đảo Norfolk"
+	},
+	{
+		"key": "ng",
+		"name": "Nigeria"
+	},
+	{
+		"key": "ni",
+		"name": "Nicaragua"
+	},
+	{
+		"key": "nl",
+		"name": "Hà Lan"
+	},
+	{
+		"key": "no",
+		"name": "Na Uy"
+	},
+	{
+		"key": "np",
+		"name": "Nepal"
+	},
+	{
+		"key": "nr",
+		"name": "Nauru"
+	},
+	{
+		"key": "nu",
+		"name": "Niue"
+	},
+	{
+		"key": "nz",
+		"name": "New Zealand"
+	},
+	{
+		"key": "om",
+		"name": "Oman"
+	},
+	{
+		"key": "pa",
+		"name": "Panama"
+	},
+	{
+		"key": "pe",
+		"name": "Peru"
+	},
+	{
+		"key": "pf",
+		"name": "Polynésie thuộc Pháp"
+	},
+	{
+		"key": "pg",
+		"name": "Papua New Guinea"
+	},
+	{
+		"key": "ph",
+		"name": "Philippines"
+	},
+	{
+		"key": "pk",
+		"name": "Pakistan"
+	},
+	{
+		"key": "pl",
+		"name": "Ba Lan"
+	},
+	{
+		"key": "pm",
+		"name": "Saint Pierre và Miquelon"
+	},
+	{
+		"key": "pn",
+		"name": "Pitcairn"
+	},
+	{
+		"key": "pr",
+		"name": "Puerto Rico"
+	},
+	{
+		"key": "ps",
+		"name": "Lãnh thổ Palestine"
+	},
+	{
+		"key": "pt",
+		"name": "Bồ Đào Nha"
+	},
+	{
+		"key": "pw",
+		"name": "Palau"
+	},
+	{
+		"key": "py",
+		"name": "Paraguay"
+	},
+	{
+		"key": "qa",
+		"name": "Qatar"
+	},
+	{
+		"key": "ro",
+		"name": "Romania"
+	},
+	{
+		"key": "rs",
+		"name": "Serbia"
+	},
+	{
+		"key": "ru",
+		"name": "Nga"
+	},
+	{
+		"key": "rw",
+		"name": "Rwanda"
+	},
+	{
+		"key": "sa",
+		"name": "Ả Rập Saudi"
+	},
+	{
+		"key": "sb",
+		"name": "Quần đảo Solomon"
+	},
+	{
+		"key": "sc",
+		"name": "Seychelles"
+	},
+	{
+		"key": "gb-sct",
+		"name": "Scotland"
+	},
+	{
+		"key": "sd",
+		"name": "Sudan"
+	},
+	{
+		"key": "se",
+		"name": "Thụy Điển"
+	},
+	{
+		"key": "sg",
+		"name": "Singapore"
+	},
+	{
+		"key": "sh",
+		"name": "Saint Helena"
+	},
+	{
+		"key": "si",
+		"name": "Slovenia"
+	},
+	{
+		"key": "sk",
+		"name": "Slovakia"
+	},
+	{
+		"key": "sl",
+		"name": "Sierra Leone"
+	},
+	{
+		"key": "sm",
+		"name": "San Marino"
+	},
+	{
+		"key": "sn",
+		"name": "Senegal"
+	},
+	{
+		"key": "so",
+		"name": "Somalia"
+	},
+	{
+		"key": "sr",
+		"name": "Suriname"
+	},
+	{
+		"key": "ss",
+		"name": "Nam Sudan"
+	},
+	{
+		"key": "st",
+		"name": "São Tomé và Príncipe"
+	},
+	{
+		"key": "sv",
+		"name": "El Salvador"
+	},
+	{
+		"key": "sy",
+		"name": "Syria"
+	},
+	{
+		"key": "sz",
+		"name": "Swaziland"
+	},
+	{
+		"key": "tc",
+		"name": "Quần đảo Turks và Caicos"
+	},
+	{
+		"key": "td",
+		"name": "Tchad"
+	},
+	{
+		"key": "tf",
+		"name": "Lãnh thổ phía Nam của Pháp"
+	},
+	{
+		"key": "tg",
+		"name": "Togo"
+	},
+	{
+		"key": "th",
+		"name": "Thái Lan"
+	},
+	{
+		"key": "tj",
+		"name": "Tajikistan"
+	},
+	{
+		"key": "tk",
+		"name": "Tokelau"
+	},
+	{
+		"key": "tl",
+		"name": "Timor-Leste"
+	},
+	{
+		"key": "tm",
+		"name": "Turkmenistan"
+	},
+	{
+		"key": "tn",
+		"name": "Tunisia"
+	},
+	{
+		"key": "to",
+		"name": "Tonga"
+	},
+	{
+		"key": "tr",
+		"name": "Thổ Nhĩ Kỳ"
+	},
+	{
+		"key": "tt",
+		"name": "Trinidad và Tobago"
+	},
+	{
+		"key": "tv",
+		"name": "Tuvalu"
+	},
+	{
+		"key": "tw",
+		"name": "Đài Loan"
+	},
+	{
+		"key": "tz",
+		"name": "Tanzania"
+	},
+	{
+		"key": "ua",
+		"name": "Ukraina"
+	},
+	{
+		"key": "ug",
+		"name": "Uganda"
+	},
+	{
+		"key": "um",
+		"name": "Các đảo nhỏ xa trung tâm thuộc Mỹ"
+	},
+	{
+		"key": "us",
+		"name": "Hoa Kỳ"
+	},
+	{
+		"key": "uy",
+		"name": "Uruguay"
+	},
+	{
+		"key": "uz",
+		"name": "Uzbekistan"
+	},
+	{
+		"key": "va",
+		"name": "Vatican"
+	},
+	{
+		"key": "vc",
+		"name": "Saint Vincent và Grenadines"
+	},
+	{
+		"key": "ve",
+		"name": "Venezuela"
+	},
+	{
+		"key": "vg",
+		"name": "Quần đảo Virgin thuộc Anh"
+	},
+	{
+		"key": "vi",
+		"name": "Việt Nam"
+	},
+	{
+		"key": "vu",
+		"name": "Vanuatu"
+	},
+	{
+		"key": "wf",
+		"name": "Wallis và Futuna"
+	},
+	{
+		"key": "ws",
+		"name": "Samoa"
+	},
+	{
+		"key": "ye",
+		"name": "Yemen"
+	},
+	{
+		"key": "yt",
+		"name": "Mayotte"
+	},
+	{
+		"key": "za",
+		"name": "Nam Phi"
+	},
+	{
+		"key": "zm",
+		"name": "Zambia"
+	},
+	{
+		"key": "zw",
+		"name": "Zimbabwe"
+	}
+]
