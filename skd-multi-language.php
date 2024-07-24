@@ -1,12 +1,4 @@
 <?php
-/**
-Plugin name     : Đa ngôn ngữ
-Plugin class    : skd_multi_language
-Plugin uri      : http://sikido.vn
-Description     : Plugin giúp tạo website đa ngôn ngữ cho phép bạn có thể biên tập nhiều hơn một ngôn ngữ trên website
-Author          : Hữu Trọng
-Version         : 3.0.0
-*/
 const SML_NAME = 'skd-multi-language';
 
 define('SML_PATH', Path::plugin( SML_NAME ) );
