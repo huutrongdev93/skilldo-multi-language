@@ -60,7 +60,7 @@
 			constructor() {
 				this.inputKey       = $('#input-translations-key')
 				this.inputValue     = $('#input-translations-value')
-				this.buttonAdd      = new ButtonLoading('#btn-translations-add')
+				this.buttonAdd      = SkilldoUtil.buttonLoading('#btn-translations-add')
 				this.languageKey    = $('#ref_lang').val();
 				this.load()
 			}
@@ -112,13 +112,13 @@
 					'label' : this.inputValue.val()
 				};
 
-				this.buttonAdd.loading();
+				this.buttonAdd.start();
 
 				request.post(ajax, data).then(function(response) {
 
 					SkilldoMessage.response(response);
 
-					self.buttonAdd.success()
+					self.buttonAdd.stop()
 
 					if(response.status === 'success') {
 

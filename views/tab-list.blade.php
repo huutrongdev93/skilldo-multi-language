@@ -95,11 +95,11 @@
 					'key'	 : box.attr('data-id')
 				};
 
-				buttonLoading.loading()
+				buttonLoading.start()
 
 				request.post(ajax, data).then(function(response) {
 
-					buttonLoading.success()
+					buttonLoading.stop()
 
 					SkilldoMessage.response(response);
 
@@ -121,13 +121,13 @@
 
 				data.action     =  'AdminLanguageAjax::save';
 
-				self.submitLoading.loading();
+				self.submitLoading.start();
 
                 request.post(ajax, data).then(function(response) {
 
                     SkilldoMessage.response(response);
 
-					self.submitLoading.success();
+					self.submitLoading.stop();
 
 					if(self.isEdit === false ) {
 						$('#js_system_language_tbody').append(`<tr data-id="${response.data.locale}" data-label="${response.data.label}" data-flag="${response.data.flag}">

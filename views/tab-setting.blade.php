@@ -26,11 +26,11 @@
 
             data.action     =  'AdminLanguageAjax::setting';
 
-            loading.loading();
+            loading.start();
 
             request.post(ajax, data).then(function(response) {
 
-                loading.success();
+                loading.stop();
 
                 SkilldoMessage.response(response);
             });
@@ -46,11 +46,11 @@
                 action: 'AdminLanguageAjax::buildJs'
             }
 
-            loading.loading();
+            loading.start();
 
             request.post(ajax, data).then(function(response) {
 
-                loading.success();
+                loading.stop();
 
                 SkilldoMessage.response(response);
             });
