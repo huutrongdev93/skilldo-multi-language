@@ -37,7 +37,12 @@
                     </td>
                     <td class="action">
                         <button type="button" class="btn btn-blue btn-lang-edit">{!! Admin::icon('edit') !!}</button>
-                        {!! Admin::btnDelete(['id' => $key, 'ajax' => 'LanguageAjax::delete']) !!}
+                        {!! Admin::btnConfirm('red', [
+                            'id' => $key,
+                            'action' => 'delete',
+                            'tooltip' => trans('general.delete'),
+                            'ajax' => 'LanguageAjax::delete'
+                        ]) !!}
                     </td>
                 </tr>
             @endforeach
