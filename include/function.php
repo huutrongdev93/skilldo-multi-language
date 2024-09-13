@@ -108,6 +108,10 @@ class LangHelper {
 
             $url = request()->getRequestUri();
 
+            $base = request()->getBaseUrl();
+
+            $url = Str::after($url, $base);
+
             $url = trim($url, '/');
 
             if (in_array($langKey, $languageKey) !== false) {
@@ -133,13 +137,9 @@ class LangHelper {
             }
 
             if ($switcher == 'dropdown') {
-
-                $js = file_get_contents('views/plugins/skd-multi-language/assets/js/language.js');
-
                 Plugin::view('skd-multi-language', 'views/components/dropdown', [
                     'languages'       => $languageRender,
                     'current' => $languageCurrent,
-                    'js' => $js
                 ]);
             }
         }
