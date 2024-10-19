@@ -24,7 +24,7 @@
             </thead>
             <tbody id="js_system_language_tbody">
             @foreach ($language as $key => $lang)
-                <tr data-id="{!! $key !!}" data-label="{!! $lang['label'] !!}" data-flag="{!! $lang['flag'] !!}">
+                <tr class="tr_{!! $key !!}" data-id="{!! $key !!}" data-label="{!! $lang['label'] !!}" data-flag="{!! $lang['flag'] !!}">
                     <td class="language-label">{!! $lang['label'] !!}</td>
                     <td class="language-locale">{{$key}}</td>
                     <td class="language-flag"><img src="{!! LangHelper::flagLink($lang['flag']) !!}" alt="{{$key}}"/></td>
@@ -41,7 +41,7 @@
                             'id' => $key,
                             'action' => 'delete',
                             'tooltip' => trans('general.delete'),
-                            'ajax' => 'LanguageAjax::delete'
+                            'ajax' => 'AdminLanguageAjax::delete'
                         ]) !!}
                     </td>
                 </tr>
@@ -135,16 +135,16 @@
 					self.submitLoading.stop();
 
 					if(self.isEdit === false ) {
-						$('#js_system_language_tbody').append(`<tr data-id="${response.data.locale}" data-label="${response.data.label}" data-flag="${response.data.flag}">
+						$('#js_system_language_tbody').append(`<tr class="tr_${response.data.locale}" data-id="${response.data.locale}" data-label="${response.data.label}" data-flag="${response.data.flag}">
 								<td class="language-label">${response.data.label}</td>
 								<td class="language-locale">${response.data.locale}</td>
 								<td class="language-flag"><img src="${response.data.flag}" style="width:50px;"  alt=""/></td>\
 								<td class="text-center">
-	                                <div class="language-default language-set-default" data-bs-toggle="tooltip" data-bs-title="Chọn ${response.data.label} làm ngôn ngữ mặc định"><i class="fa-solid fa-stars"></i></div>
+                                    <div class="language-default btn-set-default" data-bs-toggle="tooltip" data-bs-title="Chọn ${response.data.label} làm ngôn ngữ mặc định"><i class="fa-solid fa-stars"></i></div>
 								</td>
 								<td class="action">
-									<button type="button" class="btn-icon btn-blue btn-lang-edit">Edit</button>
-									<button type="button" class="btn-icon btn-red btn-lang-delete">Delete</button>
+									<button type="button" class="btn btn-blue btn-lang-edit"><i class="fa-duotone fa-pencil"></i></button>
+									<button class="btn btn-red js_btn_confirm" data-action="delete" data-ajax="AdminLanguageAjax::delete" data-model="" data-heading="Xóa Dữ liệu" data-description="Bạn chắc chắn muốn xóa dữ liệu này ?" data-trash="disable" data-id="${response.data.locale}" type="button"><i class="fa-duotone fa-trash"></i></button>
 								</td>
 							</tr>`);
 					}

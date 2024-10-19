@@ -104,7 +104,7 @@ class AdminLanguageAjax {
 
                 SkillDo\Model\Language::where('language', $key)->remove();
 
-                response()->success(trans('ajax.delete.success'));
+                response()->success(trans('ajax.delete.success'), [$key]);
             }
         }
 
