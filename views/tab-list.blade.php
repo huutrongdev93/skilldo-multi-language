@@ -24,10 +24,10 @@
             </thead>
             <tbody id="js_system_language_tbody">
             @foreach ($language as $key => $lang)
-                <tr class="tr_{!! $key !!}" data-id="{!! $key !!}" data-label="{!! $lang['label'] !!}" data-flag="{!! $lang['flag'] !!}">
+                <tr class="tr_{!! $key !!}" data-id="{!! $key !!}" data-label="{!! $lang['label'] !!}" data-flag="{!! $lang['flag'] ?? '' !!}">
                     <td class="language-label">{!! $lang['label'] !!}</td>
                     <td class="language-locale">{{$key}}</td>
-                    <td class="language-flag"><img src="{!! LangHelper::flagLink($lang['flag']) !!}" alt="{{$key}}"/></td>
+                    <td class="language-flag"><img src="{!! LangHelper::flagLink($lang['flag'] ?? '') !!}" alt="{{$key}}"/></td>
                     <td class="text-center">
                         @if ($key == Language::default())
                             <div class="language-default"><i class="fa-solid fa-stars"></i></div>
