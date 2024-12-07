@@ -1,0 +1,18 @@
+{
+    "folders" : [
+        "includes",
+        "admin"
+    ],
+    "files" : [],
+    "only-admin" : {
+        "folders" : [
+            "admin"
+        ],
+        "files" : [
+        ]
+    },
+    "only-client" : {
+        "folders" : [],
+        "files"   : []
+    }
+}

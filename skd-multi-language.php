@@ -22,25 +22,13 @@ class skd_multi_language {
     {
         Option::delete( 'language_default' );
         Option::delete( 'language' );
-        $role  = skd_roles()->getNames();
-        foreach ( $role as $name => $label ) {
-            $role = Role::get( $name );
+        $role  = Role::make()->getNames();
+        foreach ($role as $name => $label ) {
+            $role = Role::get($name);
             $role->remove('system_language');
             $role->remove('system_translations');
         }
     }
 }
 
-include 'include/cache.php';
-
-include 'include/function.php';
-
-include 'include/ajax.php';
-
-include 'include/role.php';
-
-include 'include/menu.php';
-
-include 'include/load.php';
-
-include 'admin/admin.php';
+include 'autoload/autoload.php';

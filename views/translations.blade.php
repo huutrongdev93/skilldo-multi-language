@@ -1,17 +1,17 @@
 <div class="box">
 	<div class="box-header">
-		<h4 class="box-title">Bản dịch</h4>
+		<h4 class="box-title">{{ trans('general.translation') }}</h4>
 	</div>
 	<div class="box-content">
 		{!! Admin::loading() !!}
 		<div class="row">
 			<div class="col-md-6">
-				<p>Dịch từ ngôn ngữ <b>{{$default['label']}}</b> sang <b>{{$current['label']}}</b></p>
+				<p>{!! trans('general.translation.from.to', ['from' => $default['label'], 'to' => $current['label']]) !!}</b></p>
 			</div>
 			<div class="col-md-6">
 				<div class="text-end">
 					<div class="mb-3 text-end d-flex gap-2 justify-content-start justify-content-lg-end align-items-center">
-						<p class="mb-0"><b>Bản dịch:</b></p>
+						<p class="mb-0"><b>{{ trans('general.translation') }}:</b></p>
 						<div class="d-flex gap-3 align-items-center">
                             @foreach ($language as $key => $lang)
 								@if($key == $currentKey)
@@ -30,10 +30,10 @@
 		<div class="row">
 			<input type="hidden" id="ref_lang" value="{!! $currentKey !!}">
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<input id="input-translations-key" class="form-control" placeholder="Key bản dịch" required>
+				<input id="input-translations-key" class="form-control" placeholder="{{ trans('general.translation.form.key.placeholder') }}" required>
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<input id="input-translations-value" class="form-control" placeholder="Bản dịch" required>
+				<input id="input-translations-value" class="form-control" placeholder="{{ trans('general.translation.form.value.placeholder') }}" required>
 			</div>
 			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 				{!! Admin::button('add', ['id' => 'btn-translations-add']) !!}
