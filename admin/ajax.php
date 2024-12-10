@@ -1,5 +1,5 @@
 <?php
-if(\request()->ajax())
+if(!\request()->ajax())
 {
     return;
 }

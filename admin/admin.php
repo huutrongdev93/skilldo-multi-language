@@ -58,9 +58,9 @@ class AdminLanguage
         $formSetting = form();
 
         $formSetting->radio('language_display', [
-            'all'  => trans('system.lang.form.display.all'), //Hiển thị tất cả cờ và tên
-            'flag' => trans('system.lang.form.display.flag'), //Chỉ hiển thị cờ
-            'name' => trans('system.lang.form.display.name'), //Chỉ hiển tên
+            'all'  => trans('system.lang.form.display.options.all'), //Hiển thị tất cả cờ và tên
+            'flag' => trans('system.lang.form.display.options.flag'), //Chỉ hiển thị cờ
+            'name' => trans('system.lang.form.display.options.name'), //Chỉ hiển tên
         ], [
             'label' => trans('system.lang.form.display'), //Hiển thị ngôn ngữ
         ], LangHelper::setting('display'));
