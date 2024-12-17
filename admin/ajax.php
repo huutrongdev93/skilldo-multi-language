@@ -72,6 +72,10 @@ class AdminLanguageAjax {
 
         Option::update('language_default', $defaultNew);
 
+        \SkillDo\Model\Language::where('language', $defaultNew)->delete();
+
+        \SkillDo\Cache::flush();
+
         response()->success(trans('ajax.save.success'));
     }
     #[NoReturn]

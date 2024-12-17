@@ -12,42 +12,45 @@
         </form>
     </div>
     <div class="col-md-8">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Tên ngôn ngữ</th>
-                    <th>Locale</th>
-                    <th>Cờ</th>
-                    <th class="text-center">Là mặc định?</th>
-                    <th>#</th>
-                </tr>
-            </thead>
-            <tbody id="js_system_language_tbody">
-            @foreach ($language as $key => $lang)
-                <tr class="tr_{!! $key !!}" data-id="{!! $key !!}" data-label="{!! $lang['label'] !!}" data-flag="{!! $lang['flag'] ?? '' !!}">
-                    <td class="language-label">{!! $lang['label'] !!}</td>
-                    <td class="language-locale">{{$key}}</td>
-                    <td class="language-flag"><img src="{!! LangHelper::flagLink($lang['flag'] ?? '') !!}" alt="{{$key}}"/></td>
-                    <td class="text-center">
-                        @if ($key == Language::default())
-                            <div class="language-default"><i class="fa-solid fa-stars"></i></div>
-                        @else
-                            <div class="language-default btn-set-default" data-bs-toggle="tooltip" data-bs-title="Chọn {{$lang['label']}} làm ngôn ngữ mặc định"><i class="fa-solid fa-stars"></i></div>
-                        @endif
-                    </td>
-                    <td class="action">
-                        <button type="button" class="btn btn-blue btn-lang-edit">{!! Admin::icon('edit') !!}</button>
-                        {!! Admin::btnConfirm('red', [
-                            'id' => $key,
-                            'action' => 'delete',
-                            'tooltip' => trans('general.delete'),
-                            'ajax' => 'AdminLanguageAjax::delete'
-                        ]) !!}
-                    </td>
-                </tr>
-            @endforeach
-            </tbody>
-        </table>
+        <div class="box-content">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Tên ngôn ngữ</th>
+                        <th>Locale</th>
+                        <th>Cờ</th>
+                        <th class="text-center">Là mặc định?</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody id="js_system_language_tbody">
+                @foreach ($language as $key => $lang)
+                    <tr class="tr_{!! $key !!}" data-id="{!! $key !!}" data-label="{!! $lang['label'] !!}" data-flag="{!! $lang['flag'] ?? '' !!}">
+                        <td class="language-label">{!! $lang['label'] !!}</td>
+                        <td class="language-locale">{{$key}}</td>
+                        <td class="language-flag"><img src="{!! LangHelper::flagLink($lang['flag'] ?? '') !!}" alt="{{$key}}"/></td>
+                        <td class="text-center">
+                            @if ($key == Language::default())
+                                <div class="language-default"><i class="fa-solid fa-stars"></i></div>
+                            @else
+                                <div class="language-default btn-set-default" data-bs-toggle="tooltip" data-bs-title="Chọn {{$lang['label']}} làm ngôn ngữ mặc định"><i class="fa-solid fa-stars"></i></div>
+                            @endif
+                        </td>
+                        <td class="action">
+                            <button type="button" class="btn btn-blue btn-lang-edit">{!! Admin::icon('edit') !!}</button>
+                            {!! Admin::btnConfirm('red', [
+                                'id' => $key,
+                                'action' => 'delete',
+                                'tooltip' => trans('general.delete'),
+                                'ajax' => 'AdminLanguageAjax::delete'
+                            ]) !!}
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
+            {!! Admin::alert('error', 'Khi thay đổi ngôn ngữ mặc định, bản dịch của ngôn ngữ được chọn làm mặc định sẽ bị mất', ['heading' => 'Lưu ý']) !!}
+        </div>
     </div>
 </div>
 
