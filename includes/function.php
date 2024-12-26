@@ -114,9 +114,14 @@ class LangHelper {
 
             $url = trim($url, '/');
 
-            if (in_array($langKey, $languageKey) !== false) {
-
+            if (in_array($langKey, $languageKey) !== false)
+            {
                 $url = Str::after($url, $langKey . '/');
+            }
+
+            if(empty($url))
+            {
+                $url =  'trang-chu';
             }
 
             $languageRender = [];
@@ -124,10 +129,13 @@ class LangHelper {
             foreach ($languageList as $key => $val) {
                 $languageRender[$key] = [];
                 $languageRender[$key]['url'] = Url::base() . $key . '/' . $url;
-                $languageRender[$key]['flag'] = ($display == 'name') ? '' : LangHelper::flagLink($val['flag']);
+                $languageRender[$key]['flag'] = ($display == 'name' || $display == 'key') ? '' : LangHelper::flagLink($val['flag']);
                 $languageRender[$key]['label'] = ($display == 'flag') ? '' : $val['label'];
+                if($display == 'key' || $display == 'all-key')
+                {
+                    $languageRender[$key]['label'] = $key;
+                }
             }
-
 
             if ($switcher == 'list') {
                 Plugin::view('skd-multi-language', 'views/components/list', [

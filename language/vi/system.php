@@ -10,9 +10,11 @@ return [
     'lang.form.flag' => 'Cờ',
 
     'lang.form.display' => 'Hiển thị ngôn ngữ',
-    'lang.form.display.options.all' => 'Hiển thị tất cả cờ và tên',
+    'lang.form.display.options.all' => 'Hiển thị cờ và tên',
+    'lang.form.display.options.all.key' => 'Hiển thị cờ và key',
     'lang.form.display.options.flag' => 'Chỉ hiển thị cờ',
     'lang.form.display.options.name' => 'Chỉ hiển tên',
+    'lang.form.display.options.key' => 'Chỉ hiển key',
 
     'lang.form.display.switcher' => 'Hiển thị trình chuyển đổi ngôn ngữ',
     'lang.form.display.switcher.options.dropdown' => 'Danh sách thả xuống',

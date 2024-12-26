@@ -9,10 +9,13 @@ return [
     'lang.form.locale.note' => 'Locale for the language (e.g., en:). You will need to create the :path directory if this language does not exist',
     'lang.form.flag' => 'Flag',
 
-    'lang.form.display' => 'Display language',
-    'lang.form.display.options.all' => 'Show all flags and names',
+    'lang.form.display' => 'Language Display',
+    'lang.form.display.options.all' => 'Show flag and name',
+    'lang.form.display.options.all.key' => 'Show flag and key',
     'lang.form.display.options.flag' => 'Show flag only',
     'lang.form.display.options.name' => 'Show name only',
+    'lang.form.display.options.key' => 'Show key only',
+
 
     'lang.form.display.switcher' => 'Display language switcher',
     'lang.form.display.switcher.options.dropdown' => 'Dropdown list',

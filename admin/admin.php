@@ -61,6 +61,8 @@ class AdminLanguage
             'all'  => trans('system.lang.form.display.options.all'), //Hiển thị tất cả cờ và tên
             'flag' => trans('system.lang.form.display.options.flag'), //Chỉ hiển thị cờ
             'name' => trans('system.lang.form.display.options.name'), //Chỉ hiển tên
+            'all-key'  => trans('system.lang.form.display.options.all.key'), //Hiển thị tất cả cờ và tên
+            'key'  => trans('system.lang.form.display.options.key'), //Hiển thị tất cả key
         ], [
             'label' => trans('system.lang.form.display'), //Hiển thị ngôn ngữ
         ], LangHelper::setting('display'));
